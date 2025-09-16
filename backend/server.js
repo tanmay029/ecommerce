@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 5001;
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
+    'https://ecommerce-liard-eight-38.vercel.app/',
+    /\.vercel\.app$/
   ],
   credentials: true,
   optionsSuccessStatus: 200,
