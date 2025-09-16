@@ -2,7 +2,7 @@
   "name": "ecommerce-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5001",
+  "proxy": "http://localhost:",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "axios": "^1.12.2",
