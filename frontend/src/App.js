@@ -13,6 +13,8 @@ import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage/OrderConfirmationPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
+import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 
@@ -29,6 +31,8 @@ function App() {
             <Route path="/cart" element={<CartPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/orders" element={<OrderHistoryPage />} />
             <Route
               path="/checkout"
               element={

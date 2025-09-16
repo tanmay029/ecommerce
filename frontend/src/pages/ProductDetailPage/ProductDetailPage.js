@@ -23,7 +23,7 @@ const ProductDetailPage = () => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch(`ecommerce-production-4053.up.railway.app/api/products/${id}`);
+        const response = await fetch(`http://localhost:5001/api/products/${id}`);
         console.log('📡 Response status:', response.status);
         
         if (!response.ok) {
