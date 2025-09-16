@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
+
 // Load environment variables
 dotenv.config();
 
@@ -14,7 +15,9 @@ const corsOptions = {
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'https://ecommerce-liard-eight-38.vercel.app/',
-    /\.vercel\.app$/
+    'ecommerce-production-4053.up.railway.app',
+    /\.vercel\.app$/,
+    /\.railway\.app$/
   ],
   credentials: true,
   optionsSuccessStatus: 200,
@@ -592,10 +595,9 @@ app.use('*', (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log('🚀 Backend server is running!');
-  console.log(`📡 Server URL: http://localhost:${PORT}`);
-  console.log(`🔍 Health check: http://localhost:${PORT}/api/health`);
+  console.log(`📡 Server running on port: ${PORT}`);
   console.log(`📊 Products loaded: ${mockProducts.length}`);
-  console.log(`🌍 CORS enabled for: http://localhost:3000`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 });

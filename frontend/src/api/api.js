@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
+const API_URL = process.env.REACT_APP_API_URL || 'ecommerce-production-4053.up.railway.app';
 
 console.log('🔗 API Configuration loaded - Base URL:', API_URL);
 
